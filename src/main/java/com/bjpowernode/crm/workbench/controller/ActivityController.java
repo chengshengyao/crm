@@ -37,7 +37,8 @@ public class ActivityController {
 
 
     @RequestMapping("/workbench/activity/queryAllActivity")
-    public @ResponseBody PaginationVo queryAllActivity(
+    @ResponseBody
+    public  PaginationVo queryAllActivity(
             @RequestParam(defaultValue = "1",required = false) int page,
             @RequestParam(defaultValue = "2",required = false) int pageSize,
             ActivityQueryVo queryVo){
