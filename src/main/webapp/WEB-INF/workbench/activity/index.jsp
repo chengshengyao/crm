@@ -222,7 +222,7 @@
 						</tr>
 					</thead>
 					<tbody id="activityBody" >
-
+					<%--展现市场活动列表--%>
 					</tbody>
 				</table>
 			</div>
