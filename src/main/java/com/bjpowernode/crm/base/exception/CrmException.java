@@ -13,6 +13,9 @@ public class CrmException extends RuntimeException {
         this.exceptionEnum = exceptionEnum;
     }
 
+
+
+
     public CrmExceptionEnum getExceptionEnum() {
         return exceptionEnum;
     }
