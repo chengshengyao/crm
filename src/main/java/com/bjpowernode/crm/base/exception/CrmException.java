@@ -14,8 +14,6 @@ public class CrmException extends RuntimeException {
     }
 
 
-
-
     public CrmExceptionEnum getExceptionEnum() {
         return exceptionEnum;
     }

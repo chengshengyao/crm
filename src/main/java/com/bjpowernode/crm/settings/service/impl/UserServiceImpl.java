@@ -12,16 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @ProjectName: crm
- * @Package: com.bjpowernode.crm.settings.service.impl
- * @Description: java类作用描述
- * @Author: Andy
- * @CreateDate: 2020/11/16 10:39
- * @Version: 1.0
- * <p>
- * Copyright: Copyright (c) 2020
- */
+
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
@@ -63,8 +54,8 @@ public class UserServiceImpl implements UserService {
             }
             //允许登录的ip地址
             if(user.getAllowIps() != null){
+                //不允许登录的ip地址
                 if(!user.getAllowIps().contains(ip)){
-                    //不允许登录的ip地址
                     throw new CrmException(CrmExceptionEnum.LOGIN_ACCOUNT_IP);
                 }
             }

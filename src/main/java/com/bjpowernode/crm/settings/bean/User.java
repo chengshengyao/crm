@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name = "tbl_user")
-@NameStyle(Style.normal)
+@NameStyle(Style.normal)//【tk-mybatis】@NameStyle(Style.normal)来表示类的字段与表字段对应，应注意字段的类型和名称与表保持一致，
 public class User {
 
     @Id
