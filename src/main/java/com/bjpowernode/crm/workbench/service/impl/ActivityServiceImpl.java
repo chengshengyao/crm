@@ -110,6 +110,7 @@ public class ActivityServiceImpl implements ActivityService {
          */
         Example example = new Example(ActivityRemark.class);
         Example.Criteria criteria = example.createCriteria();
+        //添加xxx字段等于value条件【属性，值】
         criteria.andEqualTo("activityId",activity.getId());
         List<ActivityRemark> activityRemarks = activityRemarkMapper.selectByExample(example);
 
