@@ -4,7 +4,7 @@ import com.bjpowernode.crm.base.bean.DictionaryType;
 
 import java.util.List;
 
-public interface DictionaryService {
+public interface  DictionaryService {
 
 
     List<DictionaryType> queryDictionary();
